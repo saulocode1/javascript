@@ -39,6 +39,8 @@
         var n2 = prompt('Digite outro número: ') - recebe valor como string
         */
 
+        // ${} - place holder
+
         // Transformando string para inteiro
         var n1 = parseInt(prompt('1 - Digite um número: '))
         var n2 = parseInt(prompt('1 - Digite outro número: '))
@@ -52,6 +54,8 @@
         var soma2 = n3 + n4
         
         alert('A segunda soma vale ' + soma2)
+
+        alert(`A soma entre ${n3} e ${n4} vale ${soma2}`) // template string
 
         // Transformando número para string
         var numero = Number(prompt('3 - Digite um número: '))
