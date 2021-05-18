@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+
+    <style>
+        body {
+            background-color: lightskyblue;
+            color: white;
+            font-size: normal 20pt;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Parágrafo</p>
+    
+    <script>
+        // + adição
+        // + concatenação
+
+        // STRING PARA NÚMERO
+
+        // parseInt(n) - transformar em inteiro
+        // parseFloat(n) - transformar em float
+        // number(n) - javaScript faz a conversão | 7.5 + 2 = 9.5
+
+        // NÚMERO PARA STRING 
+        
+        // String(n)
+        // n.toString()
+
+        /*
+        var n1 = prompt('Digite um número: ') - recebe valor como string 
+        var n2 = prompt('Digite outro número: ') - recebe valor como string
+        */
+
+        // Transformando string para inteiro
+        var n1 = parseInt(prompt('1 - Digite um número: '))
+        var n2 = parseInt(prompt('1 - Digite outro número: '))
+        var soma = n1 + n2 
+
+        alert('A soma dos valores é ' + (soma))
+
+        // Transformando string para número
+        var n3 = Number(prompt('2 - Digite um número: ')) // indiferente se é float ou int
+        var n4 = Number(prompt('2 - Digite outro número: ')) // indiferente se é float ou int
+        var soma2 = n3 + n4
+        
+        alert('A segunda soma vale ' + soma2)
+
+        // Transformando número para string
+        var numero = Number(prompt('3 - Digite um número: '))
+
+        console.log(typeof String(numero))
+        console.log(typeof numero.toString)
+    </script>
+    
+</body>
+</html>
