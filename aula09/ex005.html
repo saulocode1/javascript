@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    
+    <style>
+        body {
+            background-color: lightskyblue;
+            color: black;
+            font: normal 14pt 'Times New Roman'
+        }
+        div {
+            text-align: center;
+            width: 100px;
+            padding: 5px 10px;
+            background-color: grey;
+            cursor: pointer;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique aqui</div>
+    <div id="button">Botão</div>
+
+    <script>
+        var div = document.getElementById('msg')
+        var body = window.document.body
+        var p1 = document.getElementsByTagName('p')[0] // pega todos os elementos 'p' porém com o [0], pega o primeiro.
+        
+        p1.style.color = 'white' // muda a cor do parágrafo 1
+        div.style.color = 'white' // muda a cor da div
+        document.write('Está escrito assim: ' + p1.innerText) // escreve na ela o que está escrito em p1.
+        // div.innerText = 'Clicar'
+
+        var d = document.querySelector('div#button') // mais novo
+        d.style.background = 'white'
+        
+    </script>
+</body>
+</html>
