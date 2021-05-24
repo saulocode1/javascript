@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(135, 166, 250);
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+    position: relative;
+}
+
+.img {  
+    background-size: cover;
+    text-align: center;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
