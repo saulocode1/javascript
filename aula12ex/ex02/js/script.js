@@ -10,8 +10,8 @@ function verificar() {
     var input = document.querySelector('input#inputYear')
     var inputSex = document.getElementsByName('inputSex')
     var p = document.querySelector('p.text')
-    var img = document.createElement('img')
-    img.setAttribute('class', 'img')
+    var img = document.createElement('img') // criar elemento
+    img.setAttribute('class', 'img') // criar atributo 
 
     var res = Number(input.value)
     var idade = ano - res
@@ -21,7 +21,7 @@ function verificar() {
     }
 
     var gênero = ''
-    if (inputSex[0].checked) {
+    if (inputSex[0].checked) { // input radio selecionado
         gênero = 'Homem'
         if (idade < 5) {
             img.setAttribute('src', './img/homemBebe.jpg')
@@ -50,5 +50,5 @@ function verificar() {
         }
     } 
     p.innerHTML = `${gênero} com ${idade} anos.`
-    p.appendChild(img)
+    p.appendChild(img) // adicionar filho
 }
