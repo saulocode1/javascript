@@ -13,9 +13,21 @@ function contar() {
     let passoValor = Number(passo.value)
     let fimValor = Number(fim.value)
 
-    res.innerHTML = 'Contando: '
+    res.innerHTML = 'Contando: <br>'
 
-    for (var c = inicioValor; c <= fimValor; c += passoValor){
-        res.innerHTML += `${c} `
+    if (passoValor <= 0) {
+        alert('Passo inválido.')
+        passoValor = 1
     }
+
+    if (inicioValor < fimValor) {  
+        for (var c = inicioValor; c <= fimValor; c += passoValor){
+            res.innerHTML += `${c}, `
+        }
+    } else {
+        for (var c = inicioValor; c >= fimValor; c -= passoValor) {
+            res.innerHTML += `${c}, `
+        }
+    }
+
 }
