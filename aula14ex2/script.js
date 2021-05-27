@@ -1,17 +1,23 @@
-var input = document.querySelector('input#input')
 var button = document.querySelector('input#button')
-var res = document.querySelector('div#tabuada')
 
-button.addEventListener('click', function() {
-    var valor = input.value
+button.addEventListener('click', tabuada)
+
+function tabuada() {
+    let input = document.querySelector('input#input')
+    let tab = document.querySelector('select#tabuada')
+    let valor = input.value
     
-    for (c = 1; c <= 10; c++) {
-    console.log(`${valor} x ${c} = ${valor * c}`)
+    if (valor.length == 0) {
+        alert('Digite um número.')
+    }
 
-    res.innerHTML = `${valor} x ${c} = ${valor * c}`
-}})
-
-
-
-
-
+    tab.innerHTML = ''
+    for (var c = 1; c <= 10; c++) {
+        let item = document.createElement('option')
+        
+        console.log(item)
+        item.innerHTML = `${valor} x ${c} = ${valor*c}`
+        item.value = `tab${c}`
+        tab.appendChild(item) // adicionar filho item dentro de tab
+    }
+}

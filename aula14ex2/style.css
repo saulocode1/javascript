@@ -20,9 +20,11 @@ section {
     position: relative;
 }
 
-div#tabuada {
-    padding: 15px;
+select#tabuada {
+    padding: 10px;
+    margin-bottom: 10px;
 }
+
 
 footer {
     color: white;
