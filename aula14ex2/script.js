@@ -1,23 +1,21 @@
-var button = document.querySelector('input#button')
+let button = document.querySelector('input#button')
 
-button.addEventListener('click', tabuada)
+button.addEventListener('click', clicar)
 
-function tabuada() {
-    let input = document.querySelector('input#input')
-    let tab = document.querySelector('select#tabuada')
-    let valor = input.value
-    
-    if (valor.length == 0) {
-        alert('Digite um número.')
-    }
+function clicar() {
+    let numero = document.querySelector('input#numero')
+    let select = document.querySelector('select')
 
-    tab.innerHTML = ''
-    for (var c = 1; c <= 10; c++) {
-        let item = document.createElement('option')
-        
-        console.log(item)
-        item.innerHTML = `${valor} x ${c} = ${valor*c}`
-        item.value = `tab${c}`
-        tab.appendChild(item) // adicionar filho item dentro de tab
+    if (numero.value.length == 0) {
+        alert('Valor inválido.')
+    } else {
+        let valor = Number(numero.value)
+
+        select.innerText = '' //limpar select
+        for (c = 1; c <= 10; c++) {
+            let item = document.createElement('option') //criar option a cada loop
+            item.innerText = `${valor} x ${c} = ${c*valor}`
+            select.appendChild(item)
+        }
     }
 }
