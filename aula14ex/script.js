@@ -29,5 +29,4 @@ function contar() {
             res.innerHTML += `${c}, `
         }
     }
-
 }

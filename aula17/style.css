@@ -1,0 +1,35 @@
+html {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(135, 166, 250);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 30pt;
+}
+
+section {
+    text-align: start;
+    font-size: 15pt;
+    padding: 15px;
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+}
+
+select {
+    text-align: center;
+    width: 160px;
+}
+
+footer {
+    margin: 15px;
+    color: white;
+    font-size: 15pt;
+}
