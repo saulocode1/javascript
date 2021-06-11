@@ -4,24 +4,38 @@
     3 - ADICIONAR VALOR DO INPUT NO SELECT [OK]
 */
 
-const buttonAdd = document.querySelector('#adicionar')
-const buttonFin = document.querySelector('#finalizar')
+let buttonAdd = document.querySelector('#adicionar')
+let buttonFin = document.querySelector('#finalizar')
+
+let input = document.querySelector('#input')
+let select = document.querySelector('select')
+let res = document.querySelector('#res')
+
+let valor = Number(input.value)
+let valores = []
 
 buttonAdd.addEventListener('click', adicionar)
 
-function adicionar() {
-
-    const input = document.querySelector('#input')
-    const valor = input.value
-    const select = document.querySelector('select')
-    const option = document.createElement('option')
-    
-    const array = [valor]
-    console.log(array)
-    if (valor >= 1 && valor <= 100) {
-        option.innerText += `Valor ${valor} adicionado.` 
-        select.appendChild(option)
+function isNumero(n) {
+    if (n >= 1 && n <= 100) {
+        return true
     } else {
-        alert ('Valor inválido!')
+        return false
     }
 }
+
+function inLista(n, l) {
+    if (l.indexOf(n) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if (isNumero(valor) && !inLista(valor, valores)) {
+        valores.push(valor)
+    } else {
+        alert('Opção inválida.')
+    }
+} 

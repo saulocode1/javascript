@@ -3,33 +3,37 @@ html {
     margin: 0px;
 }
 body {
-    background-color: rgb(135, 166, 250);
+    background-color: #282a36;
     text-align: center;
 }
 
 h1 {
-    color: white;
+    color: #8be9fd;
     font-size: 30pt;
 }
 
 section {
+    color: #50fa7b;
     text-align: start;
     font-size: 15pt;
     padding: 15px;
     width: 500px;
-    background-color: white;
+    background-color: #6272a4;
     margin: auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
 }
 
 select {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
     text-align: center;
     width: 160px;
 }
 
 footer {
     margin: 15px;
-    color: white;
+    color: #8be9fd;
     font-size: 15pt;
 }
