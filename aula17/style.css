@@ -3,22 +3,21 @@ html {
     margin: 0px;
 }
 body {
-    background-color: #282a36;
+    background-color: rgb(93, 114, 170);
     text-align: center;
 }
 
 h1 {
-    color: #8be9fd;
+    color: #fff;
     font-size: 30pt;
 }
 
 section {
-    color: #50fa7b;
     text-align: start;
     font-size: 15pt;
     padding: 15px;
     width: 500px;
-    background-color: #6272a4;
+    background-color: #ffffff;
     margin: auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
@@ -34,6 +33,6 @@ select {
 
 footer {
     margin: 15px;
-    color: #8be9fd;
+    color: #fff;
     font-size: 15pt;
 }
