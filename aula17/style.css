@@ -1,38 +1,38 @@
-html {
-    padding: 0px;
-    margin: 0px;
-}
 body {
-    background-color: rgb(93, 114, 170);
-    text-align: center;
+    background-color: #87A6FA;
 }
 
-h1 {
-    color: #fff;
-    font-size: 30pt;
+header {
+    text-align: center;
+    color: white;
+    font-size: 15pt;
 }
 
 section {
-    text-align: start;
     font-size: 15pt;
-    padding: 15px;
     width: 500px;
-    background-color: #ffffff;
-    margin: auto;
+    background-color: white;
+    padding: 15px;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+    margin: auto;
 }
 
 select {
-    display: block;
     margin-top: 10px;
-    padding: 5px;
-    text-align: center;
-    width: 160px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+    width: 150px;
+}
+
+div.res {
+    margin-top: 10px;
 }
 
 footer {
-    margin: 15px;
-    color: #fff;
+    color: white;
+    text-align: center;
     font-size: 15pt;
+    margin-top: 10px;
 }
