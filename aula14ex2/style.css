@@ -1,32 +1,31 @@
 body {
-    background-color: rgb(135, 166, 250);
-    font-size: 15pt;
-    box-sizing: border-box;
+    background-color: #87A6FA;
 }
 
 header {
-    color: white;
     text-align: center;
+    color: white;
+    font-size: 15pt;
 }
 
 section {
-    background-color: #fff;
-    border-radius: 10px;
+    font-size: 15pt;
     width: 500px;
-    height: 400px;
-    margin: auto;
+    background-color: white;
     padding: 15px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
-    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.473);
+    margin: auto;
 }
 
-select#tabuada {
-    padding: 10px;
+select {
     margin-bottom: 10px;
+    padding: 10px;
 }
-
 
 footer {
     color: white;
     text-align: center;
+    font-size: 15pt;
+    margin-top: 10px;
 }
